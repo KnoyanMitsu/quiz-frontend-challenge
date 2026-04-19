@@ -7,7 +7,7 @@ import Input from "@/component/Input";
 
 
 function Home() {
-  const [minute, setMinute] = useState();
+  const [minute, setMinute] = useState("");
   const router = useRouter();
 
   const handleSubmit = (e) => {

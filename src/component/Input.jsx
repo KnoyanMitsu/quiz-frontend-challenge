@@ -12,14 +12,16 @@ Input.prototype = {
 
 function Input({ type, placeholder, className, required, value, onChange }) {
   return (
-    <input
-      type={type}
-      placeholder={placeholder}
-      className={`w-full p-2 border border-gray-300 rounded-md ${className}`}
-      required={required}
-      value={value} 
-      onChange={onChange}
-    />
+    <>
+      <input
+        type={type}
+        placeholder={placeholder}
+        className={`w-full p-2 border border-gray-300 rounded-md ${className}`}
+        required={required}
+        value={value}
+        onChange={onChange}
+      />
+    </>
   );
 }
 
