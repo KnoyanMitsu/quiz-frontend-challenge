@@ -10,7 +10,6 @@ function Test() {
   const [questions, setQuestions] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState({});
-  const [isMounted, setIsMounted] = useState(false);
 
   const router = useRouter();
 
@@ -18,7 +17,6 @@ function Test() {
   const minute = searchParams.get("minute");
 
   useEffect(() => {
-    setIsMounted(true);
     const savedAnswers = localStorage.getItem("answer");
     setUserAnswers(savedAnswers ? JSON.parse(savedAnswers) : {});
 
